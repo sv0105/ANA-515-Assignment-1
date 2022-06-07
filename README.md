@@ -1,13 +1,10 @@
-# ANA-515-Assignment-1
-
-**---
+---
 title: "ANA 515 Assignment 1"
 author: "Sree Veereshwar Kumar Vallem"
 date: "6/5/2022"
 output:
-  word_document: default
-  pdf_document: default
-  html_document: default
+  html_document:
+    theme: cosmo
 ---
 
 
@@ -44,4 +41,3 @@ youth %>% ggplot(aes(age)) +geom_freqpoly(binwidth = 1)
 ```{r race-dist, echo=FALSE}
 youth %>% ggplot(aes(fct_infreq(race)%>% fct_rev()))+geom_bar() + coord_flip() + labs(x="Victims race")
 ```
-**
